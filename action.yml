@@ -17,12 +17,12 @@ inputs:
 outputs:
   time: # id of output
     description: 'The time we greeted you'
-runs:
+# runs:
   # using: 'docker'
   # image: 'blazerunner/blazemeter'
   # args:
     # - ${{ inputs.apikey }}
     # - ${{ inputs.apisecret }}
     # - ${{ inputs.testid }}
-    # run: 
+run: 
     docker-compose run -e apikey=${{inputs.apikey}} -e apisecret=${{inputs.apisecret}} -e testid=${{inputs.testid}} blazemeter
