@@ -1,9 +1,17 @@
 # action.yml
-name: 'Hello World'
+name: 'BlazeRunner'
 description: 'Greet someone and record the time'
 inputs:
   apikey:  # id of input
     description: 'API Key'
+    required: true
+    default: 'World'
+  apisecret:  # id of input
+    description: 'API Secret'
+    required: true
+    default: 'World'
+  testid:  # id of input
+    description: 'Test Id'
     required: true
     default: 'World'
 outputs:
@@ -11,6 +19,8 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: 'docker-compose'
+  image: 'blazerunner/blazemeter'
   args:
     - ${{ inputs.apikey }}
+    - ${{ inputs.apisecret }}
+    - ${{ inputs.testid }}
