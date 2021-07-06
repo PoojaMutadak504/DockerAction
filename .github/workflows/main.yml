@@ -10,6 +10,7 @@ jobs:
       - name: Run Blazemeter test
         uses: ./ # Uses an action in the root directory
         id: hello
-        with:
-          apikey: 'Mona the Octocat'
+        # with:
+          # apikey: 'Mona the Octocat'
+        # run: docker-compose run -e apikey=${{env.apikey}} -e apisecret=${{env.apisecret}} -e testid=${{env.testid}} blazemeter
       # Use the output from the `hello` step
