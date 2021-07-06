@@ -19,7 +19,7 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: 'blazerunner/blazemeter'
+  image: 'Dockerfile'
   args:
     - ${{ inputs.apikey }}
     - ${{ inputs.apisecret }}
