@@ -1,7 +1,7 @@
 # Container image that runs your code
 FROM blazerunner/blazemeter:latest
 
-CMD ["/bin/bash"]
+
 COPY entrypoint.sh /home/entrypoint.sh
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 
