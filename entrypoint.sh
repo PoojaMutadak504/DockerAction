@@ -1,6 +1,3 @@
 #!/bin/sh -l
 
-echo "Hello $1"
-time=$(date)
-echo "::set-output name=time::$time"
-pause
+CMD pwsh /Blazemeter-run.ps1
