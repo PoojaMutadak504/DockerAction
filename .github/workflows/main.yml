@@ -8,7 +8,7 @@ jobs:
       image: blazerunner/blazemeter
     steps:
          - name: Log the node version
-           run: run             
+           run: run -e apikey=asas -e apisecret=asa -e testid=asa          
 
 # on: [push]
 
