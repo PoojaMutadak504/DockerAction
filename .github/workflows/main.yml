@@ -7,8 +7,8 @@ jobs:
     container:
       image: blazerunner/blazemeter
     steps:
-         - name: Log the node version
-           run: run -e apikey=asas -e apisecret=asa -e testid=asa          
+         - name: Run existing Test
+           run: pwsh /Blazemeter-run.ps1 -apikey asas -apisecret asas -testidinput asas -showtaillog 'true'  
 
 # on: [push]
 
