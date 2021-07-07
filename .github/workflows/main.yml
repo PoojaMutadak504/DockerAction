@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Run Blazemeter test
         #uses: ./ # Uses an action in the root directory
-        uses: actions/DockerAction@v1
+        uses: PoojaMutadak504/DockerAction@v1
         id: run-test
         with:
           apikey: 'b9107809a101b8b788e9964f'
