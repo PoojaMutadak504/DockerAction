@@ -20,5 +20,9 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - "sdsdd"
+    - "sdsdd"
+    - "sdsdd"
     # run: 
     # docker-compose run -e apikey=${{inputs.apikey}} -e apisecret=${{inputs.apisecret}} -e testid=${{inputs.testid}} blazemeter
