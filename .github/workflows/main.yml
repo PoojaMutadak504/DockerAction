@@ -11,12 +11,12 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: hello
         with:
-          apikey: 'Mona the Octocat'
-          apisecret: 'Mona the Octocat'
-          testid: 'Mona the Octocat'
+          apikey: 'b9107809a101b8b788e9964f'
+          apisecret: '24da75ad1302cfb986fe84846288e3c9aecb61742a269f0927db60b286aedbf4f9c28df6'
+          testid: '9092315'
       # Use the output from the `hello` step
       - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        run: echo "The time was"
         # with:
           # apikey: 'Mona the Octocat'
           
