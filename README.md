@@ -1,18 +1,17 @@
-# Hello world docker action
+# Run Blazemeter Test Action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This action allows you to run Blazemeter existing Test
 
 ## Inputs
 
-## `who-to-greet`
+## `apikey`
+**Required** The API key of Blazemeter.
+## `apisecret`
+**Required** The API secret of Blazemeter.
+## `testid`
+**Required** The Test Id of Blazemeter.
 
-**Required** The name of the person to greet. Default `"World"`.
 
-## Outputs
-
-## `time`
-
-The time we greeted you.
 
 ## Example usage
 
