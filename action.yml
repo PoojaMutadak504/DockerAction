@@ -20,8 +20,9 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  build-args:
-    - name: apikey
-      value: ${{ inputs.apikey }}
+  args:
+     - ${{ inputs.apikey }}
+     - ${{ inputs.apisecret }}
+     - ${{ inputs.testid }}
     # run: 
     # docker-compose run -e apikey=${{inputs.apikey}} -e apisecret=${{inputs.apisecret}} -e testid=${{inputs.testid}} blazemeter
