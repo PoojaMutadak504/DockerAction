@@ -15,6 +15,8 @@ This action allows you to run Blazemeter existing Test
 
 ## Example usage
 
-uses: actions/hello-world-docker-action@v1
+uses: actions/DockerAction@v1
 with:
-  who-to-greet: 'Mona the Octocat'
+   apikey: 'xxx'
+   apisecret: 'xxx'
+   testid: 'xxx'
