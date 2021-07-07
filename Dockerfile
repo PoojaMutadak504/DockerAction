@@ -1,9 +1,10 @@
 # Container image that runs your code
 FROM blazerunner/blazemeter:latest
 
-
-COPY entrypoint.sh /entrypoint.sh
-COPY Blazemeter-run.ps1 /Blazemeter-run.ps1
+RUN mkdir /home/blazemeter
+WORKDIR /home/blazemeter
+COPY entrypoint.sh /home/blazemeter/entrypoint.sh
+COPY Blazemeter-run.ps1 /home/blazemeter/Blazemeter-run.ps1
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 
 RUN ["chmod", "+x", "/entrypoint.sh"]
