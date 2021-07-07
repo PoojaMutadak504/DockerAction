@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-CMD pwsh /Blazemeter-run.ps1
+pwsh /Blazemeter-run.ps1 -apikey asas -apisecret asas -testidinput asas -showtaillog 'true' 
