@@ -14,6 +14,10 @@ inputs:
     description: 'Test Id'
     required: true
     default: '0'
+  supportedfolderPath:  # id of input
+    description: 'Supported File Folder'
+    required: false
+    default: '0'
 runs:
   using: 'docker'
   image: 'Dockerfile'
